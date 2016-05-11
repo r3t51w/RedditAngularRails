@@ -1,0 +1,30 @@
+.page-header{
+  text-align: center;
+}
+.well{
+  text-align: center;
+}
+
+.form-group{
+    width:80%;
+    margin-left:10%;
+    text-align: center;
+}
+.back{
+  text-align: left;
+  margin-top: 1.5%;
+  margin-left: 2%;
+}
+.well{
+  width:80%;
+  margin-left:10%;
+}
+.title{
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.comment{
+  font-size: 20px;
+  margin-left: 10px;
+}
