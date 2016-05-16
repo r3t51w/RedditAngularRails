@@ -1,4 +1,4 @@
-angular.module('redditClone',['ui.router'])
+angular.module('redditClone',['ui.router','templates'])
 //routing instructions
 .config([
   '$stateProvider',
