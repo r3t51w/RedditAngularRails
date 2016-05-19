@@ -1,6 +1,6 @@
 // posts service //factory used as a data store
 angular.module('redditClone')
-.factory('posts',[function(){
+.factory('posts','$http',[function(){
   var o={
     posts: [
       {title: "Post 1", upvotes: 10, comments:[]},
