@@ -15,6 +15,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # angular-rails-templates
 gem 'angular-rails-templates'
+# csrf token
+gem 'angular_rails_csrf'
 
 
 # Use ActiveModel has_secure_password

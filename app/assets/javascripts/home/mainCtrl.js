@@ -17,7 +17,7 @@ function($scope,posts){
   ]*/;
   $scope.addPost = function(){
     if(!$scope.title || $scope.title === ""){return;}
-      $scope.posts.push({
+      posts.create({
         title: $scope.title,
         upvotes: 0,
         link: $scope.link,
