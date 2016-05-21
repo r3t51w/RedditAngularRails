@@ -1,4 +1,4 @@
-angular.module('redditClone')
+angular.module('redditClone',['ui.router','templates'])
 //routing instructions
 .config([
   '$stateProvider',
@@ -18,7 +18,12 @@ angular.module('redditClone')
     .state('posts',{
       url: '/posts/{id}',
       templateUrl: 'posts/_posts.html',
-      controller: 'PostsCtrl'
+      controller: 'PostsCtrl',
+      resolve: {
+        post: ['$stateParams','posts', function($stateParams, posts){
+          return posts.get($stateParams.id);
+        }]
+      }
     });
   $urlRouterProvider.otherwise('home');
 }])

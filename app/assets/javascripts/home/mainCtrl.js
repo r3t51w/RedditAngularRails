@@ -1,5 +1,5 @@
 //MainCtrl
-angular.module('redditClone',['ui.router','templates'])
+angular.module('redditClone')
 .controller('MainCtrl',[
 '$scope','posts',
 function($scope,posts){
@@ -30,6 +30,6 @@ function($scope,posts){
       $scope.link='';
   };
   $scope.incrementUpvotes= function(post){
-    post.upvotes += 1;
+    post.upvote(post);
   };
 }])
