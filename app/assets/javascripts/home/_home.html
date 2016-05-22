@@ -15,7 +15,7 @@
         {{post.title}}
       </span>
       - upvotes: {{post.upvotes}}
-      <a href='#/posts/{{$index}}'>Comments: {{post.comments.length}}</a>
+      <a href='#/posts/{{post.id}}'>Comments: {{post.comments.length}}</a>
     </div>
 </div>
 <form ng-submit='addPost()' class='form-group'>
