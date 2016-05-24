@@ -30,6 +30,6 @@ function($scope,posts){
       $scope.link='';
   };
   $scope.incrementUpvotes= function(post){
-    post.upvote(post);
+    posts.upvote(post);
   };
 }])
