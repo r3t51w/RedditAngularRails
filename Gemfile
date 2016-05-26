@@ -19,6 +19,8 @@ gem 'angular-rails-templates'
 gem 'angular_rails_csrf'
 # responders gem
 gem 'responders', '~> 2.0'
+# add devise authentication
+gem 'devise','~> 3.4.0'
 
 
 # Use ActiveModel has_secure_password
