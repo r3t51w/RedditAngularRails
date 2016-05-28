@@ -1,0 +1,15 @@
+
+<nav class='navbar'>
+  <button class='navbar-toggle glyphicon glyphicon-menu-hamburger' type='button' data-toggle='collapse' data-target='#navbarCollapse'>
+
+  </button>
+<div class='collapse navbar-collapse pull-right' ng-controller='NavCtrl' id='navbarCollapse'>
+  <ul class='nav navbar-nav'>
+    <li><a href='#/home'>Home</a></li>
+    <li ng-hide='signedIn()'><a href='#/login'>Log In</a></li>
+    <li ng-hide='signedIn()'><a href='#/register'>Register</a></li>
+    <li ng-show='signedIn()'><a href='#/'>{{user.username}}</a></li>
+    <li ng-show='signedIn()'><a ng-click='logout()'>Log Out</a></li>
+  </ul>
+</div>
+</nav>

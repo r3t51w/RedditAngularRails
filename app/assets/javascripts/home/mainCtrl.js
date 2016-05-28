@@ -32,4 +32,4 @@ function($scope,posts){
   $scope.incrementUpvotes= function(post){
     posts.upvote(post);
   };
-}])
+}]);
