@@ -16,7 +16,7 @@ angular.module('redditClone')
   o.getAll = function(){
     return $http.get('/posts.json').success(function(data){
       angular.copy(data, o.posts);
-      console.log(data);
+      //console.log(data);
     });
   };
   o.create = function(post){

@@ -15,6 +15,7 @@
         {{post.title}}
       </span>
       - upvotes: {{post.upvotes}}
+      posted by <a ng-href="#/users/{{post.user.username}}">{{post.user.username}}</a>
       <a href='#/posts/{{post.id}}'>Comments: {{post.comments.length}}</a>
     </div>
 </div>
